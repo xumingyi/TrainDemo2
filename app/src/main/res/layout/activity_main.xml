@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppCompatNoActionBarTheme"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/one_line"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/bt_sendbroadcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="静态广播">
+        </Button>
+        <Button
+            android:id="@+id/bt_senddybroadcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="动态广播">
+        </Button>
+
+        <Button
+            android:id="@+id/bt_sendlocalbroadcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本地广播">
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/two_line"
+        android:layout_below="@+id/one_line"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/bt_startservice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start服务">
+        </Button>
+        <Button
+            android:id="@+id/bt_stopservice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停止Start服务">
+        </Button>
+
+        <Button
+            android:id="@+id/bt_bindService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bind服务">
+        </Button>
+
+        <Button
+            android:id="@+id/bt_stopbindService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停止Bind服务">
+        </Button>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/main_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="页面跳转demo-首页" />
+
+
+
+</RelativeLayout>

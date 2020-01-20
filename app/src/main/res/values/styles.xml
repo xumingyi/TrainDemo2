@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppCommonWinDisPreviewFullTheme" parent="AppCompatNoActionBarTheme">
+        <item name="android:windowDisablePreview">true</item>
+        //不预览页面，点击icon会透明等待直到页面加载完直接展示
+        <item name="android:windowContentOverlay">@null</item>
+        //全屏即无通知栏
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="AppCompatNoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        //状态栏颜色修改为透明，防止页面切换时出现怪异色透明效果看不出来，所有方案都必须使用
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>
